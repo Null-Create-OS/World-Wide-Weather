@@ -1,0 +1,83 @@
+/* --- Basic Reset and Body Styling --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #6dd5ed, #2193b0);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* --- Main Container for the App --- */
+#weather-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+/* --- Input and Button Styling --- */
+input[type="text"] {
+    padding: 12px;
+    width: 70%;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin-right: 10px;
+    font-size: 16px;
+    box-sizing: border-box; /* Ensures padding doesn't add to width */
+}
+
+button#get-weather-btn {
+    padding: 12px 15px;
+    background-color: #2193b0;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button#get-weather-btn:hover {
+    background-color: #1a7b93;
+}
+
+/* --- Weather Information Display --- */
+h1#location {
+    margin-top: 25px;
+    font-size: 2em;
+    color: #0d47a1;
+}
+
+p#temperature {
+    font-size: 3em;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #e65100;
+}
+
+p#description {
+    font-size: 1.2em;
+    font-style: italic;
+    color: #555;
+}
+
+/* --- Responsive adjustments for smaller screens --- */
+@media (max-width: 480px) {
+    #weather-container {
+        padding: 20px;
+    }
+    input[type="text"] {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    button#get-weather-btn {
+        width: 100%;
+    }
+}
